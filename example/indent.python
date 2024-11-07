@@ -1,0 +1,16 @@
+def example_function(value):
+    if value > 10:
+        return "Value is greater than 10"
+    elif value == 10:
+        return "Value is exactly 10"
+    else:
+        return "Value is less than 10"
+
+    # This return statement is outside the if-elif-else block
+    # It will never be reached because the function will return before this point
+    return "This will never be executed"
+
+# Example usage
+print(example_function(15))  # Output: Value is greater than 10
+print(example_function(10))  # Output: Value is exactly 10
+print(example_function(5))   # Output: Value is less than 10
